@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerseFlow | Collin M. Woods</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+        crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="content/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-secondary-subtle py-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="bi bi-body-text me-2 text-primary"></span>VerseFlow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_navbar"
+                aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-3 active" role="tab" data-bs-toggle="tab" data-bs-target="#home"><span class="bi bi-house me-2"></span>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-3" role="tab" data-bs-toggle="tab" data-bs-target="#bible"><span class="bi bi-book me-2"></span>Bible</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-3" role="tab" data-bs-toggle="tab" data-bs-target="#history"><span class="bi bi-clock-history me-2"></span>History</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid overflow-y-auto">
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="home" role="tabpanel">
+                <div class="p-5 my-4 text-bg-light rounded-3 border shadow-sm">
+                    <div class="container-fluid py-5">
+                        <h1 class="display-5 fw-bold">Welcome to VerseFlow</h1> 
+                        <p class="col-md-8 fs-4">The modern Bible app - anywhere, any device.</p>
+                        <p class="text-muted">Explore the Bible with VerseFlow. Access various translations and read the scriptures.</p>
+                        <p class="text-muted">VerseFlow offers a user-friendly interface to read and study the Bible. You can switch between different translations, bookmark verses, and share your insights with others.</p>
+                        <p class="text-muted">Whether you are looking for a specific verse or want to read through a book of the Bible, VerseFlow makes it easy to navigate and find what you need.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="bible" role="tabpanel">
+                <div id="bible_container" class="container-fluid mt-3 p-0 rounded-2 border border-secondary-subtle">
+                    <div class="row mx-auto px-0">
+                        <div class="col-12 py-2 text-bg-light d-flex rounded-top-2 border-bottom border-2">
+                            <div class="input-group w-auto">
+                                <span class="input-group-text"><span class="bi bi-search"></span></span>
+                                <input id="bible_search_input" type="text" class="form-control" placeholder="Search for a verse or book..." />
+                            </div>
+
+                            <div class="input-group w-auto ms-2">
+                                <span class="input-group-text"><span class="bi bi-book"></span></span>
+                                <select id="bible_translation_select" class="form-select">
+                                    <option value="" selected disabled>Select a book</option>
+                                    <!-- Options will be populated dynamically -->
+                                </select>
+                            </div>
+                        </div>
+                        <div id="bible_content" class="col-12 mt-3 text-bg-light"></div>
+                    </div>
+                    
+            </div>
+
+            <div class="tab-pane fade" id="history" role="tabpanel">
+                <h2>History</h2>
+                <p>Learn about the history of the Bible and its translations.</p>
+            </div>
+        </div>
+</body>

@@ -1,0 +1,84 @@
+/* #region Font Definitions */
+
+@font-face {
+    font-family: 'Inter-Light';
+    src: url('../fonts/Inter-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../fonts/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('../fonts/Inter-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../fonts/Inter-Bold.ttf');
+}
+
+/* #endregion */
+
+/* #region Bootstrap Overrides */
+
+body {
+    font-family: Inter-Regular;
+    overflow-y: hidden;
+}
+
+.form-control:focus,
+.form-select:focus,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.navbar-brand {
+    font-family: Inter-Medium;
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    font-family: Inter-Regular;
+    font-size: 0.875rem;
+}
+
+    .nav-link:hover {
+        background-color: #EFEFEF;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
+    }
+
+    .nav-link.active {
+        background-color: #323232;
+        color: #FFFFFF !important;
+    }
+
+
+.dropdown-menu {
+    font-size: 0.875rem;
+}
+
+.form-control,
+.form-select {
+    font-size: 0.875rem;
+}
+    
+
+/* #endregion */
+
+/* #region Custom Styles */
+
+#bible_container {
+    height: calc(100vh - 75px);
+    overflow-y: auto;
+}
