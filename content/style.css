@@ -78,7 +78,14 @@ body {
 
 /* #region Custom Styles */
 
-#bible_container {
-    height: calc(100vh - 75px);
+#bible_container, #history_content {
+    height: calc(100vh - 15em);
     overflow-y: auto;
 }
+
+.highlight {
+    background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-8&color=fff266);
+    margin: -2px -6px;
+    padding: 2px 6px;
+}
+

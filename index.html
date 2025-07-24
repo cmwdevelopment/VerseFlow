@@ -64,26 +64,47 @@
                     <div class="row mx-auto px-0">
                         <div class="col-12 py-2 text-bg-light d-flex rounded-top-2 border-bottom border-2">
                             <div class="input-group w-auto">
-                                <span class="input-group-text"><span class="bi bi-search"></span></span>
-                                <input id="bible_search_input" type="text" class="form-control" placeholder="Search for a verse or book..." />
+                                <span class="input-group-text"><span class="bi bi-translate"></span></span>
+                                <select id="bible_translation_select" class="form-select">
+                                    <option value="" selected disabled>Select translation...</option>
+                                </select>
                             </div>
 
                             <div class="input-group w-auto ms-2">
                                 <span class="input-group-text"><span class="bi bi-book"></span></span>
-                                <select id="bible_translation_select" class="form-select">
-                                    <option value="" selected disabled>Select a book</option>
-                                    <!-- Options will be populated dynamically -->
+                                <select id="bible_book_select" class="form-select">
+                                    <option value="" selected disabled>Select book...</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group w-auto ms-2">
+                                <span class="input-group-text"><span class="bi bi-123"></span></span>
+                                <select id="bible_chapter_select" class="form-select">
+                                    <option value="" selected disabled>Select chapter...</option>
+                                </select>
+                            </div>
+                            <button id="bible_compare_btn" class="btn btn-primary mx-2">Compare</button>
+
+                            <div id="bible_comparison_input_group" class="input-group w-auto ms-2" hidden>
+                                <span class="input-group-text"><span class="bi bi-translate"></span></span>
+                                <select id="bible_translation_comparison_select" class="form-select">
+                                    <option value="" selected disabled>Select translation...</option>
                                 </select>
                             </div>
                         </div>
-                        <div id="bible_content" class="col-12 mt-3 text-bg-light"></div>
+                        <div id="bible_content" class="col-12 mt-3"></div>
                     </div>
-                    
+                </div>
             </div>
 
             <div class="tab-pane fade" id="history" role="tabpanel">
-                <h2>History</h2>
+                <h2 class="mt-4">History</h2>
                 <p>Learn about the history of the Bible and its translations.</p>
+                <div id="history_content" class="container-fluid mt-3 p-2">
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class='toast-container alert-toast' style='position: absolute; bottom: 4em; right: 2em; z-index: 3000!important;'></div>
 </body>
