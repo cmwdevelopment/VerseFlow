@@ -68,9 +68,9 @@ body {
     font-size: 0.875rem;
 }
 
-.form-control,
-.form-select {
-    font-size: 0.875rem;
+.form-select,
+.form-select > option {
+    font-size: 0.7rem;
 }
     
 

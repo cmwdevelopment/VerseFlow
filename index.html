@@ -40,6 +40,9 @@
                     <li class="nav-item">
                         <a class="nav-link py-3 px-3" role="tab" data-bs-toggle="tab" data-bs-target="#history"><span class="bi bi-clock-history me-2"></span>History</a>
                     </li>
+                    <li class="nav-item">
+                        <a id="logout_btn" class="nav-link py-3 px-3">Log Out</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -84,13 +87,14 @@
                                 </select>
                             </div>
                             <button id="bible_compare_btn" class="btn btn-primary mx-2">Compare</button>
-
+                            <button id="bible_clear_btn" class="btn btn-secondary ms-2">Clear</button>
                             <div id="bible_comparison_input_group" class="input-group w-auto ms-2" hidden>
                                 <span class="input-group-text"><span class="bi bi-translate"></span></span>
                                 <select id="bible_translation_comparison_select" class="form-select">
                                     <option value="" selected disabled>Select translation...</option>
                                 </select>
                             </div>
+                            
                         </div>
                         <div id="bible_content" class="col-12 mt-3"></div>
                     </div>

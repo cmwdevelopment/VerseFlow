@@ -267,6 +267,26 @@ $(() => {
         }
     });
 
+    $("#bible_clear_btn").on("click", function() {
+        $("#bible_content").removeClass("col-6").addClass("col-12");
+        $("#bible_comparison_input_group").attr("hidden", "hidden");
+        $("[id*='bible_comparison_content']").remove();
+        $("#bible_translation_comparison_select").val("");
+        $("#bible_chapter_select").val("");
+        $("#bible_book_select").val("");
+        $("#bible_translation_select").val("");
+        $("#bible_content").empty();
+    });
+
+    $("#login_btn").on("click", function() {
+        window.location.href = "index.html";
+    });
+
+    $("#logout_btn").on("click", function() { 
+        window.location.href = "login.html";
+
+    });
+
     // #endregion
 
 });
